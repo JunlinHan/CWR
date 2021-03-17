@@ -52,17 +52,19 @@ The checkpoints will be stored at `./checkpoints/HICRD_small/web`.
 ```bash
 python test.py --dataroot ./datasets/HICRD --name HICRD_small --preprocess scale_width --load_size 1024
 ```
-The test results will be saved to a html file here: `./results/HICRD_CWR/latest_test/index.html`.
+The test results will be saved to a html file here: `./results/HICRD_small/latest_test/index.html`.
 
 ### Apply a pre-trained DCL model and evaluate
 We provide our pre-trained models:
 
-Unpaired pre-trained HICRD: https://drive.google.com/file/d/1-Ouzzup2jNdg1PoYaQIjd-tm9K3LvwVl/view?usp=sharing
+Pre-trained CWR: https://drive.google.com/file/d/1-Ouzzup2jNdg1PoYaQIjd-tm9K3LvwVl/view?usp=sharing
 
-Download the pre-tained model, unzip it and put it inside ./checkpoints (You may need to create checkpoints folder by yourself if you didn't run the training code). Example usage: 
+Download the pre-tained model, unzip it and put it inside ./checkpoints (You may need to create checkpoints folder by yourself if you didn't run the training code). Download the whole HICRD dataset and put it in ./dataset/HICRD (optional). Example usage: 
 ```bash
 python test.py --dataroot ./datasets/HICRD --name HICRD_CWR --preprocess scale_width --load_size 1024
 ```
+
+The test results will be saved to a html file here: `./results/HICRD_CWR/latest_test/index.html`.
 
 For FID score, use [pytorch-fid](https://github.com/mseitzer/pytorch-fid).
 
