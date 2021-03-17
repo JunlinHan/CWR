@@ -36,7 +36,7 @@ git clone
 
   For Conda users,  you can create a new Conda environment using `conda env create -f environment.yml`.
   
-  ### CWR Training and Test
+### CWR Training and Test
 
 - A one image train/test example example HICRD is provided.
 
