@@ -59,7 +59,11 @@ We provide our pre-trained models:
 
 Pre-trained CWR: https://drive.google.com/file/d/1-Ouzzup2jNdg1PoYaQIjd-tm9K3LvwVl/view?usp=sharing
 
-Download the pre-tained model, unzip it and put it inside ./checkpoints (You may need to create checkpoints folder by yourself if you didn't run the training code). Download the whole HICRD dataset and put it in ./dataset/HICRD (optional). Example usage: 
+### Use the pre-trained model 
+1: Download the whole HICRD dataset and replace ./dataset/HICRD (optional)
+
+2: Download the pre-tained model, unzip it and put it inside ./checkpoints (You may need to create checkpoints folder by yourself if you didn't run the training code).
+
 ```bash
 python test.py --dataroot ./datasets/HICRD --name HICRD_CWR --preprocess scale_width --load_size 1024
 ```
