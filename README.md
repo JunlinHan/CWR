@@ -51,7 +51,6 @@ Download the pre-tained model, unzip it and put it inside ./checkpoints (You may
 python test.py --dataroot ./datasets/HICRD --name HICRD_CWR --preprocess scale_width --load_size 1024
 ```
 
-
 For FID score, use [pytorch-fid](https://github.com/mseitzer/pytorch-fid).
 
 Test the FID score:
@@ -68,7 +67,7 @@ If you use our code/results/dataset, please cite our paper. Thanks in advance!
 ```
 @inproceedings{han2021contrastive,
   title={Single Underwater Image Restoration by contrastive learning},
-  author={unlin Han and Mehrdad Shoeiby and Tim Malthus and Elizabeth Botha and Janet Anstee and Saeed Anwar and Ran Wei and Lars Petersson and Mohammad Ali Armin},
+  author={Junlin Han and Mehrdad Shoeiby and Tim Malthus and Elizabeth Botha and Janet Anstee and Saeed Anwar and Ran Wei and Lars Petersson and Mohammad Ali Armin},
   booktitle={IEEE International Geoscience and Remote Sensing Symposium (IGARSS)},
   year={2021}
 }
