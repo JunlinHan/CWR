@@ -54,7 +54,7 @@ python test.py --dataroot ./datasets/HICRD --name HICRD_small --preprocess scale
 ```
 The test results will be saved to a html file here: `./results/HICRD_small/latest_test/index.html`.
 
-### Apply a pre-trained DCL model and evaluate
+### Pre-trained CWR model
 We provide our pre-trained models:
 
 Pre-trained CWR: https://drive.google.com/file/d/1-Ouzzup2jNdg1PoYaQIjd-tm9K3LvwVl/view?usp=sharing
