@@ -1,9 +1,21 @@
-
+[paper](https://arxiv.org/pdf/)
 
 # Contrastive UnderWater Restoration (CWR)
 We provide our PyTorch implementation of Contrastive UnderWater Restoration (CWR). Our model is designed for underwater image restoration, but not limited to it. It performs style-transfer to all kinds of low-level vision tasks (e.g. Dehaze, Underwater image enhancement, Deraining) while keeping the structure identical.
 
 CWR achieves SOTA performances in underwater image restoration task using HICRD (Heron Island Coral Reef Dataset) as the training data.
+<br>
+The model works like:
+<img src='imgs/traintest.png' width=500>
+<br><br><br>
+
+Sample outputs:
+Before restoration:
+<img src='imgs/rawimg.png' width=500>
+<br>
+After restoration:
+<img src='imgs/restoredimg.png' width=500>
+<br>
 
 ## Prerequisites
 Python 3.6 or above.
@@ -58,9 +70,16 @@ Test the FID score:
 python -m pytorch_fid ./results/HICRD_CWR/test_latest/images/fake_B ./results/HICRD_CWR/test_latest/images/real_B
 ```
 
-### [Datasets]
+### Datasets
 
-The whole HICRD is coming soon...
+Heron Island Coral Reef Dataset (HICRD) contains 6003 low-quality images, 3472 good-quality images, and 2000 restored images. We use low-quality images and restored images as the unpaired training set (trainA + trainB). In contrast, the paired training set contains good-quality images and corresponding restored images. The test set contains 300 good-quality images(testA) as well as 300 paired restored images(testB) as ground truth. All images are in 1842 x 980 resolution.
+
+Data is collected around Heron Island, Queensland, Australia.
+<br>
+<img src='imgs/location.png' width=400>
+<br>
+The whole HICRD is coming soon... Should be releasd before May.
+
 
 ### Citation
 If you use our code/results/dataset, please cite our paper. Thanks in advance!
