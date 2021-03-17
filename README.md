@@ -44,7 +44,7 @@ The test results will be saved to a html file here: `./results/HICRD_CWR/latest_
 ### Apply a pre-trained DCL model and evaluate
 We provide our pre-trained models:
 
-Unpaired HICRD: https://drive.google.com/file/d/1pzWdxQ7wNkc26N7B01w-l2mJ3J7s_-b7/view?usp=sharing
+Unpaired pre-trained HICRD: https://drive.google.com/file/d/1-Ouzzup2jNdg1PoYaQIjd-tm9K3LvwVl/view?usp=sharing
 
 Download the pre-tained model, unzip it and put it inside ./checkpoints (You may need to create checkpoints folder by yourself if you didn't run the training code). Example usage: 
 ```bash
@@ -58,7 +58,7 @@ Test the FID score:
 python -m pytorch_fid ./results/HICRD_CWR/test_latest/images/fake_B ./results/HICRD_CWR/test_latest/images/real_B
 ```
 
-### [Datasets](./docs/datasets.md)
+### [Datasets]
 
 The whole HICRD is coming soon...
 
