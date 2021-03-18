@@ -1,4 +1,4 @@
-[arxiv](https://arxiv.org/abs/2103.09697)
+[arXiv](https://arxiv.org/abs/2103.09697)
 
 # Contrastive UnderWater Restoration (CWR)
 We provide our PyTorch implementation for paper "Single Underwater Image Restoration by Contrastive Learning". CWR is designed for underwater image restoration, but not limited to it. It performs style-transfer to all kinds of low-level vision tasks (e.g. Dehaze, Underwater image enhancement, Deraining) while keeping the structure identical.
@@ -93,7 +93,7 @@ The whole HICRD is coming soon... Should be releasd before May.
 ### Citation
 If you use our code/results/dataset, please cite our paper. Thanks in advance!
 ```
-@inproceedings{han2021contrastive,
+@inproceedings{han2021cwr,
   title={Single Underwater Image Restoration by contrastive learning},
   author={Junlin Han and Mehrdad Shoeiby and Tim Malthus and Elizabeth Botha and Janet Anstee and Saeed Anwar and Ran Wei and Lars Petersson and Mohammad Ali Armin},
   booktitle={IEEE International Geoscience and Remote Sensing Symposium (IGARSS)},
