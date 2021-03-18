@@ -1,4 +1,4 @@
-[paper](https://arxiv.org/pdf/)
+[arxiv](https://arxiv.org/abs/2103.09697)
 
 # Contrastive UnderWater Restoration (CWR)
 We provide our PyTorch implementation of Contrastive UnderWater Restoration (CWR). Our model is designed for underwater image restoration, but not limited to it. It performs style-transfer to all kinds of low-level vision tasks (e.g. Dehaze, Underwater image enhancement, Deraining) while keeping the structure identical.
