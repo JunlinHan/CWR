@@ -78,8 +78,8 @@ class CWRModel(BaseModel):
                 self.criterionNCE.append(PatchNCELoss(opt).to(self.device))
 
             self.criterionIdt = torch.nn.L1Loss().to(self.device)
-            self.optimizer_G = torch.optim.Adam(self.netG.parameters(), lr=0.0002, betas=(opt.beta1, opt.beta2))
-            self.optimizer_D = torch.optim.Adam(self.netD.parameters(), lr=0.0002, betas=(opt.beta1, opt.beta2))
+            self.optimizer_G = torch.optim.Adam(self.netG.parameters(), lr=opt.lr, betas=(opt.beta1, opt.beta2))
+            self.optimizer_D = torch.optim.Adam(self.netD.parameters(), lr=opt.lr, betas=(opt.beta1, opt.beta2))
             self.optimizers.append(self.optimizer_G)
             self.optimizers.append(self.optimizer_D)
 
@@ -179,7 +179,7 @@ class CWRModel(BaseModel):
             self.loss_NCE, self.loss_NCE_bd = 0.0, 0.0
 
         if self.opt.nce_idt and self.opt.lambda_NCE > 0.0:
-            self.loss_NCE_Y = 0#self.calculate_NCE_loss(self.real_B, self.idt_B)
+            self.loss_NCE_Y = 0
             loss_NCE_both = (self.loss_NCE + self.loss_NCE_Y)
             self.loss_idt = self.criterionIdt(self.idt_B, self.real_B) * self.opt.lambda_IDT
         else:
