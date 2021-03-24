@@ -27,7 +27,7 @@ For packages, see requirements.txt.
 
 - Clone this repo:
 ```bash
-git clone
+git clone https://github.com/JunlinHan/CWR.git
 ```
 
 - Install PyTorch 1.4 or above and other dependencies (e.g., torchvision, visdom, dominate, gputil).
