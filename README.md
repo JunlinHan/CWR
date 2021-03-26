@@ -82,7 +82,7 @@ python -m pytorch_fid ./results/HICRD_CWR/test_latest/images/fake_B ./results/HI
 Heron Island Coral Reef Dataset (HICRD) contains 6003 low-quality images, 3472 good-quality images, and 2000 restored images. We use low-quality images and restored images as the unpaired training set (trainA + trainB). 
 In contrast, the paired training set contains good-quality (trainA_paired) images and corresponding restored images (trainB_paired). The test set contains 300 good-quality images (testA) as well as 300 paired restored images (testB) as ground truth. All images are in 1842 x 980 resolution.
 
-Data is collected in Heron Island, Queensland, Australia. The collection of raw images is led by Janet Anstree, the reference images are produced by Junlin Han. The copyright belongs to CSIRO (Commonwealth Scientific and Industrial Research Organisation).
+Data is collected in Heron Island, Queensland, Australia. The collection of raw images is led by Janet Anstee, the reference images are produced by Junlin Han. The copyright belongs to CSIRO (Commonwealth Scientific and Industrial Research Organisation).
 
 Location of Heron Island:
 
