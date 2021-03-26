@@ -65,7 +65,7 @@ Pre-trained CWR: https://drive.google.com/file/d/1-Ouzzup2jNdg1PoYaQIjd-tm9K3Lvw
 2: Download the pre-tained model, unzip it and put it inside ./checkpoints (You may need to create checkpoints folder by yourself if you didn't run the training code).
 
 ```bash
-python test.py --dataroot ./datasets/HICRD --name HICRD_CWR --preprocess scale_width --load_size 1024
+python test.py --dataroot ./datasets/HICRD --name HICRD_CWR --preprocess scale_width --load_size 1680
 ```
 
 The test results will be saved to a html file here: `./results/HICRD_CWR/latest_test/index.html`.
