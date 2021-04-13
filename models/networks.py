@@ -1363,7 +1363,6 @@ class NLayerDiscriminator(nn.Module):
             SpectralNorm(nn.Conv2d(ndf * nf_mult_prev, ndf * nf_mult, kernel_size=kw, stride=1, padding=padw, bias=use_bias)),
             nn.LeakyReLU(0.2, True)
         ]
-        # todo ,spectral here??
         sequence += [SpectralNorm(nn.Conv2d(ndf * nf_mult, 1, kernel_size=kw, stride=1, padding=padw))]  # output 1 channel prediction map
         self.model = nn.Sequential(*sequence)
 
