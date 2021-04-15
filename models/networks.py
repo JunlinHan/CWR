@@ -274,8 +274,6 @@ def define_F(input_nc, netF, norm='batch', use_dropout=False, init_type='normal'
         net = PoolingF()
     elif netF == 'reshape':
         net = ReshapeF()
-    elif netF == 'mapping':
-        net = MappingF()
     elif netF == 'sample':
         net = PatchSampleF(use_mlp=False, init_type=init_type, init_gain=init_gain, gpu_ids=gpu_ids, nc=opt.netF_nc)
     elif netF == 'mlp_sample':
@@ -492,37 +490,6 @@ class ReshapeF(nn.Module):
         x = self.model(x)
         x_reshape = x.permute(0, 2, 3, 1).flatten(0, 2)
         return self.l2norm(x_reshape)
-
-class MappingF(nn.Module):
-    def __init__(self, nc=1):
-        super(MappingF, self).__init__()
-        self.nc = nc
-        m=nn.LeakyReLU(0.1)
-        n=nn.ReLU()
-        avg = nn.AdaptiveAvgPool2d(1)
-        conv = nn.Conv2d(5,64,3,stride=2)
-        # self.model = nn.Sequential(*[model,m, nn.Linear(128, 100),m, nn.Linear(100, 80),
-        #                              m, nn.Linear(80, 60),m, nn.Linear(60, 40),m,
-        #                              nn.Linear(40, 20),m, nn.Linear(20, 10),m, nn.Linear(10, nc),m, nn.Linear(nc,nc)])
-
-        # self.model2 = nn.Sequential(*[nn.Linear(256,16),n])
-        self.model = nn.Sequential(*[conv,n,avg,n])
-        self.linear = nn.Sequential(*[nn.Linear(64,64),n,nn.Linear(64,64),n,nn.Linear(64,64),
-                                      n,nn.Linear(64,64),n,nn.Linear(64,64),n,nn.Linear(64,64),n,nn.Linear(64,64),n,nn.Linear(64,64)])
-        # self.model = nn.Sequential(*[nn.Linear(256,128),n,nn.Linear(128, 100),n, nn.Linear(100, 80),
-        #                              n, nn.Linear(80, 60),n, nn.Linear(60, 40),n,
-        #                              nn.Linear(40, 20),n, nn.Linear(20, 10),n, nn.Linear(10, nc)])#,n, nn.Linear(nc,nc)])
-        self.l2norm = Normalize(2)
-        self.l1norm = Normalize(1)
-
-    def forward(self, x):
-        x= x.view(1,-1,256,256)
-        x= self.model(x)
-        x= x.view(1,-1)
-        x= self.linear(x)
-        x= self.l2norm(x)
-        return x
-
 
 class StridedConvF(nn.Module):
     def __init__(self, init_type='normal', init_gain=0.02, gpu_ids=[]):
