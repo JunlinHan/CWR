@@ -5,6 +5,11 @@ We provide our PyTorch implementation for paper "Single Underwater Image Restora
 
 CWR achieves SOTA performances in underwater image restoration task using HICRD (Heron Island Coral Reef Dataset) as the training data.
 
+[Single Underwater Image Restoration by Contrastive Learning](https://arxiv.org/abs/2103.09697)<br>
+[Junlin Han](https://junlinhan.github.io/), Mehrdad Shoeiby, Tim Malthus, Elizabeth Botha, Janet Anstee, [Saeed Anwar](https://saeed-anwar.github.io/), Ran Wei, Lars Petersson, Mohammad Ali Armin<br>
+CSIRO and Australian National University<br>
+In IGARSS 2021.
+
 CWR and other unsupervised learning-based model works like:
 
 <img src='imgs/traintest.png' width=500>
