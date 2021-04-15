@@ -39,7 +39,7 @@ class BaseOptions():
         parser.add_argument('--n_layers_D', type=int, default=3, help='only used if netD==n_layers')
         parser.add_argument('--normG', type=str, default='instance', choices=['instance', 'batch', 'none'], help='instance normalization or batch normalization for G')
         parser.add_argument('--normD', type=str, default='instance', choices=['instance', 'batch', 'none'], help='instance normalization or batch normalization for D')
-        # normG and normD has no usage, we use spectral normalization.
+        # normD has no usage, we use spectral normalization for discriminator.
         parser.add_argument('--init_type', type=str, default='xavier', choices=['normal', 'xavier', 'kaiming', 'orthogonal'], help='network initialization')
         parser.add_argument('--init_gain', type=float, default=0.02, help='scaling factor for normal, xavier and orthogonal.')
         parser.add_argument('--no_dropout', type=util.str2bool, nargs='?', const=True, default=True,
