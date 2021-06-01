@@ -31,11 +31,17 @@ Data is collected in Heron Island, Queensland, Australia. The collection of raw 
 
 Download link: https://data.csiro.au/collections/collection/CIcsiro:49488
 
-HICRD contains 8 different sites, 6 of them are with water parameters ( diffuse attenuation coefficient). More details will be included in the journal version of this paper.
+HICRD contains 8 different sites, 6 of them are with water parameters ( diffuse attenuation coefficient). The link contains both paired HICRD and unpaired HICRD. Metadata ( water parameters, camera sensor response) is also provided.
+More details will be included in the journal version of this paper.
 
 Location of Heron Island:
 
 <img src='imgs/location.png' width=400>
+
+
+General information for different sites:
+
+<img src='imgs/hicrd_table.png' width=400>
 
 ## Prerequisites
 Python 3.6 or above.
