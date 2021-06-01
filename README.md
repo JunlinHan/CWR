@@ -22,6 +22,20 @@ After restoration:
 
 <img src='imgs/restoredimg.png' width=500>
 
+### Datasets
+
+Heron Island Coral Reef Dataset (HICRD) contains 6003 low-quality images, 3673 good-quality images, and 2000 restored images. We use low-quality images and restored images as the unpaired training set (trainA + trainB). 
+In contrast, the paired training set contains good-quality (trainA_paired) images and corresponding restored images (trainB_paired). The test set contains 300 good-quality images (testA) as well as 300 paired restored images (testB) as ground truth. All images are in 1842 x 980 resolution.
+
+Data is collected in Heron Island, Queensland, Australia. The collection of raw images is led by Janet Anstee, the reference images are produced by Junlin Han. The copyright belongs to CSIRO (Commonwealth Scientific and Industrial Research Organisation).
+
+Download link: https://data.csiro.au/collections/collection/CIcsiro:49488
+
+HICRD contains 8 different sites, 6 of them are with water parameters ( diffuse attenuation coefficient). More details will be included in the journal version of this paper.
+
+Location of Heron Island:
+
+<img src='imgs/location.png' width=400>
 
 ## Prerequisites
 Python 3.6 or above.
@@ -81,19 +95,6 @@ Test the FID score:
 ```bash
 python -m pytorch_fid ./results/HICRD_CWR/test_latest/images/fake_B ./results/HICRD_CWR/test_latest/images/real_B
 ```
-
-### Datasets
-
-Heron Island Coral Reef Dataset (HICRD) contains 6003 low-quality images, 3673 good-quality images, and 2000 restored images. We use low-quality images and restored images as the unpaired training set (trainA + trainB). 
-In contrast, the paired training set contains good-quality (trainA_paired) images and corresponding restored images (trainB_paired). The test set contains 300 good-quality images (testA) as well as 300 paired restored images (testB) as ground truth. All images are in 1842 x 980 resolution.
-
-Data is collected in Heron Island, Queensland, Australia. The collection of raw images is led by Janet Anstee, the reference images are produced by Junlin Han. The copyright belongs to CSIRO (Commonwealth Scientific and Industrial Research Organisation).
-
-Download link: https://data.csiro.au/collections/collection/CIcsiro:49488
-
-Location of Heron Island:
-
-<img src='imgs/location.png' width=400>
 
 ### Citation
 If you use our code/results/dataset, please consider citing our paper. Thanks in advance!
