@@ -89,12 +89,11 @@ In contrast, the paired training set contains good-quality (trainA_paired) image
 
 Data is collected in Heron Island, Queensland, Australia. The collection of raw images is led by Janet Anstee, the reference images are produced by Junlin Han. The copyright belongs to CSIRO (Commonwealth Scientific and Industrial Research Organisation).
 
+Download link: https://data.csiro.au/collections/collection/CIcsiro:49488
+
 Location of Heron Island:
 
 <img src='imgs/location.png' width=400>
-
-The whole HICRD is coming soon... Should be released around May. More details will be added.
-
 
 ### Citation
 If you use our code/results/dataset, please consider citing our paper. Thanks in advance!
