@@ -36,12 +36,12 @@ More details will be included in the journal version of this paper.
 
 Location of Heron Island:
 
-<img src='imgs/location.png' width=500>
+<img src='imgs/location.png' width=800>
 
 
 General information for different sites:
 
-<img src='imgs/hicrd_table.png' width=500>
+<img src='imgs/hicrd_table.png' width=800>
 
 ## Prerequisites
 Python 3.6 or above.
