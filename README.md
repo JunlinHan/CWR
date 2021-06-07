@@ -31,10 +31,15 @@ The copyright belongs to CSIRO (Commonwealth Scientific and Industrial Research 
 Download link: https://data.csiro.au/collections/collection/CIcsiro:49488
 
 To download the dataset, you need to:
+
 1: Click the download link.
+
 2: Click Download, select Download all files via WebDAV in select a method.
+
 3: Enter your email address and click Request files.
+
 4: An email will be sent to your email address for verification, click it.
+
 5: You should receive further instructions soonly. Use the User and Password to access files and download them.
 
 HICRD contains 8 different sites, 6 of them are with water parameters ( diffuse attenuation coefficient). The link contains both paired HICRD and unpaired HICRD. Metadata ( water parameters, camera sensor response) is also provided.
