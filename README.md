@@ -117,7 +117,7 @@ python -m pytorch_fid ./results/HICRD_CWR/test_latest/images/fake_B ./results/HI
 If you use our code/results/dataset, please consider citing our paper. Thanks in advance!
 ```
 @inproceedings{han2021cwr,
-  title={Single Underwater Image Restoration by contrastive learning},
+  title={Single Underwater Image Restoration by Contrastive Learning},
   author={Junlin Han and Mehrdad Shoeiby and Tim Malthus and Elizabeth Botha and Janet Anstee and Saeed Anwar and Ran Wei and Lars Petersson and Mohammad Ali Armin},
   booktitle={IEEE International Geoscience and Remote Sensing Symposium (IGARSS)},
   year={2021}
