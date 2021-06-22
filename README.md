@@ -1,14 +1,11 @@
-[arXiv](https://arxiv.org/abs/2103.09697)
+[arXiv (conference)](https://arxiv.org/abs/2103.09697) | [arXiv (journal)](https://arxiv.org/abs/2106.10718) 
 
 # Contrastive UnderWater Restoration (CWR)
+**New:** Please check out our journal version at [arXiv (journal)](https://arxiv.org/abs/2106.10718).
+
 We provide our PyTorch implementation for paper "Single Underwater Image Restoration by Contrastive Learning". CWR is designed for underwater image restoration, but not limited to it. It performs style-transfer to certain kinds of low-level vision tasks (e.g. Dehaze, Underwater image enhancement, Deraining) while keeping the structure identical.
 
 CWR achieves SOTA performances in underwater image restoration task using HICRD (Heron Island Coral Reef Dataset) as the training data.
-
-[Single Underwater Image Restoration by Contrastive Learning](https://arxiv.org/abs/2103.09697)<br>
-[Junlin Han](https://junlinhan.github.io/), Mehrdad Shoeiby, Tim Malthus, Elizabeth Botha, Janet Anstee, [Saeed Anwar](https://saeed-anwar.github.io/), Ran Wei, Lars Petersson, Mohammad Ali Armin<br>
-CSIRO and Australian National University<br>
-In IGARSS 2021.
 
 CWR and other unsupervised learning-based model works like:
 
@@ -114,6 +111,11 @@ python -m pytorch_fid ./results/HICRD_CWR/test_latest/images/fake_B ./results/HI
 ```
 
 ### Citation
+[Single Underwater Image Restoration by Contrastive Learning](https://arxiv.org/abs/2103.09697)<br>
+[Junlin Han](https://junlinhan.github.io/), Mehrdad Shoeiby, Tim Malthus, Elizabeth Botha, Janet Anstee, [Saeed Anwar](https://saeed-anwar.github.io/), Ran Wei, Lars Petersson, Mohammad Ali Armin<br>
+CSIRO and Australian National University<br>
+In IGARSS 2021.
+
 If you use our code/results/dataset, please consider citing our paper. Thanks in advance!
 ```
 @inproceedings{han2021cwr,
@@ -122,16 +124,16 @@ If you use our code/results/dataset, please consider citing our paper. Thanks in
   booktitle={IEEE International Geoscience and Remote Sensing Symposium (IGARSS)},
   year={2021}
 }
+
+@article{han2021underwater,
+  title={Underwater Image Restoration via Contrastive Learning and a Real-world Dataset},
+  author={Junlin Han and Mehrdad Shoeiby and Tim Malthus and Elizabeth Botha and Janet Anstee and Saeed Anwar and Ran Wei and Mohammad Ali Armin and Honngdong Li and Lars Petersson},
+  journal={arXiv preprint arXiv:2106.10718},
+  year={2021}
+}
+
 ```
 If you use something included in CUT, you may also cite [CUT](https://arxiv.org/pdf/2007.15651).
-```
-@inproceedings{park2020cut,
-  title={Contrastive Learning for Unpaired Image-to-Image Translation},
-  author={Taesung Park and Alexei A. Efros and Richard Zhang and Jun-Yan Zhu},
-  booktitle={European Conference on Computer Vision},
-  year={2020}
-}
-```
 
 ### Contact
 junlin.han@data61.csiro.au or junlinhcv@gmail.com
