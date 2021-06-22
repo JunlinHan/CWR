@@ -111,10 +111,17 @@ python -m pytorch_fid ./results/HICRD_CWR/test_latest/images/fake_B ./results/HI
 ```
 
 ### Citation
+Conference:
 [Single Underwater Image Restoration by Contrastive Learning](https://arxiv.org/abs/2103.09697)<br>
 [Junlin Han](https://junlinhan.github.io/), Mehrdad Shoeiby, Tim Malthus, Elizabeth Botha, Janet Anstee, [Saeed Anwar](https://saeed-anwar.github.io/), Ran Wei, Lars Petersson, Mohammad Ali Armin<br>
 CSIRO and Australian National University<br>
-In IGARSS 2021.
+In IGARSS 2021
+
+Journal:
+[Underwater Image Restoration via Contrastive Learning and a Real-world Dataset](https://arxiv.org/abs/2106.10718)<br>
+[Junlin Han](https://junlinhan.github.io/), Mehrdad Shoeiby, Tim Malthus, Elizabeth Botha, Janet Anstee, [Saeed Anwar](https://saeed-anwar.github.io/), Ran Wei, Mohammad Ali Armin, [Hongdong Li](http://users.cecs.anu.edu.au/~hongdong/), Lars Petersson<br>
+CSIRO and Australian National University<br>
+In submission
 
 If you use our code/results/dataset, please consider citing our paper. Thanks in advance!
 ```
@@ -131,7 +138,6 @@ If you use our code/results/dataset, please consider citing our paper. Thanks in
   journal={arXiv preprint arXiv:2106.10718},
   year={2021}
 }
-
 ```
 If you use something included in CUT, you may also cite [CUT](https://arxiv.org/pdf/2007.15651).
 
