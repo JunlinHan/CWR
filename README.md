@@ -1,9 +1,9 @@
-[arXiv (conference)](https://arxiv.org/abs/2103.09697) | [arXiv (journal)](https://arxiv.org/abs/2106.10718) 
+[IGARSS (conference)](https://ieeexplore.ieee.org/abstract/document/9553857) | [Remote Sensing (journal)](https://www.mdpi.com/2072-4292/14/17/4297) 
 
 # Contrastive UnderWater Restoration (CWR)
-**New:** Please check out our journal version at [arXiv (journal)](https://arxiv.org/abs/2106.10718).
+**New:** Please check out our journal version at [Remote Sensing (journal)](https://www.mdpi.com/2072-4292/14/17/4297).
 
-We provide our PyTorch implementation for paper "Single Underwater Image Restoration by Contrastive Learning". CWR is designed for underwater image restoration, but not limited to it. It performs style-transfer to certain kinds of low-level vision tasks (e.g. Dehaze, Underwater image enhancement, Deraining) while keeping the structure identical.
+We provide our PyTorch implementation for paper "Single Underwater Image Restoration by Contrastive Learning" and "Underwater Image Restoration via Contrastive Learning and a Real-World Dataset". CWR is designed for underwater image restoration, but not limited to it. It performs style-transfer to certain kinds of low-level vision tasks (e.g. Dehaze, Underwater image enhancement, Deraining) while keeping the structure identical.
 
 CWR achieves SOTA performances in underwater image restoration task using HICRD (Heron Island Coral Reef Dataset) as the training data.
 
@@ -132,11 +132,11 @@ If you use our code/results/dataset, please consider citing our paper. Thanks in
   year={2021}
 }
 
-@article{han2021underwater,
+@article{han2022underwater,
   title={Underwater Image Restoration via Contrastive Learning and a Real-world Dataset},
   author={Junlin Han and Mehrdad Shoeiby and Tim Malthus and Elizabeth Botha and Janet Anstee and Saeed Anwar and Ran Wei and Mohammad Ali Armin and Honngdong Li and Lars Petersson},
-  journal={arXiv preprint arXiv:2106.10718},
-  year={2021}
+  journal={Remote Sensing},
+  year={2022}
 }
 ```
 If you use something included in CUT, you may also cite [CUT](https://arxiv.org/pdf/2007.15651).
