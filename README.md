@@ -1,7 +1,7 @@
 [IGARSS (conference)](https://ieeexplore.ieee.org/abstract/document/9553857) | [Remote Sensing (journal)](https://www.mdpi.com/2072-4292/14/17/4297) 
 
 # Contrastive UnderWater Restoration (CWR)
-**New:** Please check out our journal version at [Remote Sensing (journal)](https://www.mdpi.com/2072-4292/14/17/4297).
+**New:** Please check out our journal version at [Remote Sensing](https://www.mdpi.com/2072-4292/14/17/4297).
 
 We provide our PyTorch implementation for paper "Single Underwater Image Restoration by Contrastive Learning" and "Underwater Image Restoration via Contrastive Learning and a Real-World Dataset". CWR is designed for underwater image restoration, but not limited to it. It performs style-transfer to certain kinds of low-level vision tasks (e.g. Dehaze, Underwater image enhancement, Deraining) while keeping the structure identical.
 
