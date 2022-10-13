@@ -92,6 +92,9 @@ We provide our pre-trained models:
 
 Pre-trained CWR: https://drive.google.com/file/d/1-Ouzzup2jNdg1PoYaQIjd-tm9K3LvwVl/view?usp=sharing
 
+For underwater image enhancement:
+CWR pre-trained on HICRD, fine-tuned on UIEB: https://drive.google.com/file/d/1MCYZcAjKAf3y_rSNes_Fs3tm7L0U_77e/view?usp=sharing
+
 ### Use the pre-trained model 
 1: Download the whole HICRD dataset and replace ./dataset/HICRD (optional)
 
