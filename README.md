@@ -90,6 +90,8 @@ The test results will be saved to an html file here: `./results/HICRD_small/late
 ### Pre-trained CWR model
 We provide our pre-trained models:
 
+[Aug 2026] It looks like the download links for the pre-trained models are no longer working. If you happen to have a copy, please contact me at junlinhcv@gmail.com so I can re-upload them. Thank you very much!
+
 Pre-trained CWR: https://drive.google.com/file/d/1-Ouzzup2jNdg1PoYaQIjd-tm9K3LvwVl/view?usp=sharing
 
 For underwater image enhancement:
